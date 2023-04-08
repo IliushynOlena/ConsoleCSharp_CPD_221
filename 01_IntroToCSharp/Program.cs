@@ -8,6 +8,19 @@ namespace IntroToCSharp
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Enter the range number:");
+            int start = int.Parse(Console.ReadLine());
+            int end = int.Parse(Console.ReadLine());
+            for (int i = start; i <= end; i++)
+            {
+                for (int y = 0; y < i; y++)
+                {
+                    Console.Write(i + " ");
+                }
+                Console.WriteLine();
+            }
+
             Console.WriteLine("Hello world");
             Console.Write("Word....");
             Console.WriteLine("continue!");
