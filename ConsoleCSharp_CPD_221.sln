@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_IntroToOOP", "05_IntroTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_IntroToOOPSixSharp", "06_IntroToOOPSixSharp\06_IntroToOOPSixSharp.csproj", "{7C9632CF-0EE4-4F43-A011-A2A1AC68621E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_PartialClass", "07_PartialClass\07_PartialClass.csproj", "{B6C4A6A4-FE82-4308-8F61-994ADAC81798}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7C9632CF-0EE4-4F43-A011-A2A1AC68621E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C9632CF-0EE4-4F43-A011-A2A1AC68621E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C9632CF-0EE4-4F43-A011-A2A1AC68621E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C4A6A4-FE82-4308-8F61-994ADAC81798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C4A6A4-FE82-4308-8F61-994ADAC81798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C4A6A4-FE82-4308-8F61-994ADAC81798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C4A6A4-FE82-4308-8F61-994ADAC81798}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
