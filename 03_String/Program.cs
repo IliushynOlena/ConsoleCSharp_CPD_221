@@ -6,8 +6,27 @@ namespace _03_String
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
+            string textt = "Визначте відсоткове відношення малих і великих літер до загальної кількості символів в ньому.";
+            int res =  textt.Length;//100
+            int upp = 0;
+            int low = 0;
+            for (int i = 0; i < textt.Length; i++)
+            {
+                if (char.IsUpper(textt[i])) upp++;//30
+                if (char.IsLower(textt[i])) low++;//70
+              
+                 
+            }
+            Console.WriteLine($"Upper :  {(float)upp /(float) (res/100)} ");
+            Console.WriteLine($"Lowwer : {(float)low / (float)(res /100)}");
+
+            double upperPercent = (double)upp / res * 100;
+            double lowerPercent = (double)low / res * 100;
+            Console.WriteLine("У тексті {0}% символів є великими літерами.", upperPercent);
+            Console.WriteLine("У тексті {0}% символів є малими літерами.", lowerPercent);
             /*
             string fname, lname;
             fname = "Roman";
@@ -285,7 +304,7 @@ erjkghaer               kherlkf
             Console.WriteLine($"After trimming: /{s12}/");
             Console.ReadKey();
             char a = 'a';
-            char.Is
+          
 
 
         }
