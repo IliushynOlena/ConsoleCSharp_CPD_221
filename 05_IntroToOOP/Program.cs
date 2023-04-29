@@ -17,7 +17,6 @@ namespace _05_IntroToOOP
         private int number;
         private const float PI = 3.14f;
         private readonly int id = 10;
-
         public MyClass()
         {
             number = 10;
@@ -71,7 +70,7 @@ namespace _05_IntroToOOP
         //}
         //auto property
         public string Color { get; private set; } = "Red";
-        public string Name { get; set; }
+        public string Name { get; set; }//auto property
         private string address;
 
         public string Address

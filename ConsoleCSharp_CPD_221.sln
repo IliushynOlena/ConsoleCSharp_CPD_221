@@ -9,13 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Array", "02_Array\02_Arr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_String", "03_String\03_String.csproj", "{B9CF779D-E4D5-47F8-B9B7-DBA3B1CFE0C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_StringBuilder", "04_StringBuilder\04_StringBuilder.csproj", "{7B570452-B009-444E-A938-EC43694F71DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_StringBuilder", "04_StringBuilder\04_StringBuilder.csproj", "{7B570452-B009-444E-A938-EC43694F71DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_IntroToOOP", "05_IntroToOOP\05_IntroToOOP.csproj", "{9BE972A2-CF53-4CB4-894D-DF0ED87B0663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_IntroToOOP", "05_IntroToOOP\05_IntroToOOP.csproj", "{9BE972A2-CF53-4CB4-894D-DF0ED87B0663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_IntroToOOPSixSharp", "06_IntroToOOPSixSharp\06_IntroToOOPSixSharp.csproj", "{7C9632CF-0EE4-4F43-A011-A2A1AC68621E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_IntroToOOPSixSharp", "06_IntroToOOPSixSharp\06_IntroToOOPSixSharp.csproj", "{7C9632CF-0EE4-4F43-A011-A2A1AC68621E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_PartialClass", "07_PartialClass\07_PartialClass.csproj", "{B6C4A6A4-FE82-4308-8F61-994ADAC81798}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_PartialClass", "07_PartialClass\07_PartialClass.csproj", "{B6C4A6A4-FE82-4308-8F61-994ADAC81798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Ref_Out", "08_Ref_Out\08_Ref_Out.csproj", "{E5BED412-777D-4F69-94EF-11EA1D7BBC56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_OverloadOperators", "09_OverloadOperators\09_OverloadOperators.csproj", "{DFAF3D65-DF06-4495-AA4E-2C66D7461CCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{B6C4A6A4-FE82-4308-8F61-994ADAC81798}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6C4A6A4-FE82-4308-8F61-994ADAC81798}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6C4A6A4-FE82-4308-8F61-994ADAC81798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5BED412-777D-4F69-94EF-11EA1D7BBC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5BED412-777D-4F69-94EF-11EA1D7BBC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5BED412-777D-4F69-94EF-11EA1D7BBC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5BED412-777D-4F69-94EF-11EA1D7BBC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFAF3D65-DF06-4495-AA4E-2C66D7461CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFAF3D65-DF06-4495-AA4E-2C66D7461CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFAF3D65-DF06-4495-AA4E-2C66D7461CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFAF3D65-DF06-4495-AA4E-2C66D7461CCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
