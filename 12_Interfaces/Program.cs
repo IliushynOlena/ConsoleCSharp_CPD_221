@@ -144,6 +144,7 @@ namespace _12_Interfaces
             admin.Work();
 
             IManager manager = admin;
+            
             manager.MakeBudget();
 
             IWorker worker = admin;
