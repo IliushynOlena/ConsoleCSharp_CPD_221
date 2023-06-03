@@ -203,8 +203,367 @@ namespace _14_StandartInterface
                 Console.WriteLine(student);
             }
             */
+            #region Dictionary
+            /*
+          
+                  Console.OutputEncoding = Encoding.UTF8;
+
+            Dictionary<string, string> countries = new Dictionary<string, string>();
+
+            countries.Add("RU", "Russia");
+            countries.Add("GB", "Great Britain");
+            countries.Add("USA", "United States");
+            countries.Add("FR", "France");
+            countries.Add("CH", "China");
+            countries.Add("PL", "Poland");
+
+            foreach (KeyValuePair<string, string> keyValue in countries)
+            {
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value);
+            }
+            Console.ReadKey();
+
+            // получение элемента по ключу
+            string country = countries["USA"];
+            Console.WriteLine(country);
+
+            // изменение объектаx
+            countries["USA"] = "America";
+            // додавання об'єкта, якщо його не існує
+            countries["IN"] = "India";
+            // удаление по ключу
+            countries.Remove("GB");
+
+            foreach (KeyValuePair<string, string> keyValue in countries)
+            {
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value);
+            }
+            Console.ReadKey();
+
+            ///////////////2
+            Dictionary<char, Person> people = new Dictionary<char, Person>();
+
+            people.Add('b', new Person() { Name = "Bill" });
+            people.Add('t', new Person() { Name = "Tom" });
+            people.Add('j', new Person() { Name = "John" });
+            people.Add('r', new Person() { Name = "Rita" });
+
+            foreach (KeyValuePair<char, Person> keyValue in people)
+            {
+                // keyValue.Value представляет класс Person
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value.Name);
+            }
+            Console.ReadKey();
+
+            Console.WriteLine("\n\n changed value START");
+            foreach (var keyValue in people)
+            {
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value.Name);
+            }
+            Console.WriteLine("original end");
+
+            if (people.ContainsKey('r'))
+            {
+                people['r'].Name = "rat";
+            }
+            else
+            {
+                Console.WriteLine("Collection does not contain such key");
+            }
+            foreach (var keyValue in people)
+            {
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value.Name);
+            }
+            Console.WriteLine("changed value END");
+
+            // перебор ключей
+            foreach (char c in people.Keys)
+            {
+                Console.WriteLine(c);
+            }
+
+            // перебор по значениям
+            foreach (Person p in people.Values)
+            {
+                Console.WriteLine(p.Name);
+            }
+
+            ////////adding
+            Dictionary<char, Person> people2 = new Dictionary<char, Person>();
+            people2.Add('b', new Person() { Name = "Bill" });
+            people2['a'] = new Person() { Name = "Alice" };
+
+            /////////init
+            Dictionary<string, string> countries2 = new Dictionary<string, string>
+            {
+                {"Франция", "Париж"},
+                {"Германия", "Берлин"},
+                {"Великобритания", "Лондон"}
+            };
+
+            foreach (var pair in countries2)
+                Console.WriteLine("{0} - {1}", pair.Key, pair.Value);
+
+            ////// C# 6.0
+            Dictionary<string, string> countries3 = new Dictionary<string, string>
+            {
+                ["Франция"] = "Париж",
+                ["Германия"] = "Берлин",
+                ["Великобритания"] = "Лондон"
+            };
+
+            foreach (var pair in countries3)
+                Console.WriteLine("{0} - {1}", pair.Key, pair.Value);    Console.OutputEncoding = Encoding.UTF8;
+
+            Dictionary<string, string> countries = new Dictionary<string, string>();
+
+            countries.Add("RU", "Russia");
+            countries.Add("GB", "Great Britain");
+            countries.Add("USA", "United States");
+            countries.Add("FR", "France");
+            countries.Add("CH", "China");
+            countries.Add("PL", "Poland");
+
+            foreach (KeyValuePair<string, string> keyValue in countries)
+            {
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value);
+            }
+            Console.ReadKey();
+
+            // получение элемента по ключу
+            string country = countries["USA"];
+            Console.WriteLine(country);
+
+            // изменение объектаx
+            countries["USA"] = "America";
+            // додавання об'єкта, якщо його не існує
+            countries["IN"] = "India";
+            // удаление по ключу
+            countries.Remove("GB");
+
+            foreach (KeyValuePair<string, string> keyValue in countries)
+            {
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value);
+            }
+            Console.ReadKey();
+
+            ///////////////2
+            Dictionary<char, Person> people = new Dictionary<char, Person>();
+
+            people.Add('b', new Person() { Name = "Bill" });
+            people.Add('t', new Person() { Name = "Tom" });
+            people.Add('j', new Person() { Name = "John" });
+            people.Add('r', new Person() { Name = "Rita" });
+
+            foreach (KeyValuePair<char, Person> keyValue in people)
+            {
+                // keyValue.Value представляет класс Person
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value.Name);
+            }
+            Console.ReadKey();
+
+            Console.WriteLine("\n\n changed value START");
+            foreach (var keyValue in people)
+            {
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value.Name);
+            }
+            Console.WriteLine("original end");
+
+            if (people.ContainsKey('r'))
+            {
+                people['r'].Name = "rat";
+            }
+            else
+            {
+                Console.WriteLine("Collection does not contain such key");
+            }
+            foreach (var keyValue in people)
+            {
+                Console.WriteLine(keyValue.Key + " - " + keyValue.Value.Name);
+            }
+            Console.WriteLine("changed value END");
+
+            // перебор ключей
+            foreach (char c in people.Keys)
+            {
+                Console.WriteLine(c);
+            }
+
+            // перебор по значениям
+            foreach (Person p in people.Values)
+            {
+                Console.WriteLine(p.Name);
+            }
+
+            ////////adding
+            Dictionary<char, Person> people2 = new Dictionary<char, Person>();
+            people2.Add('b', new Person() { Name = "Bill" });
+            people2['a'] = new Person() { Name = "Alice" };
+
+            /////////init
+            Dictionary<string, string> countries2 = new Dictionary<string, string>
+            {
+                {"Франция", "Париж"},
+                {"Германия", "Берлин"},
+                {"Великобритания", "Лондон"}
+            };
+
+            foreach (var pair in countries2)
+                Console.WriteLine("{0} - {1}", pair.Key, pair.Value);
+
+            ////// C# 6.0
+            Dictionary<string, string> countries3 = new Dictionary<string, string>
+            {
+                ["Франция"] = "Париж",
+                ["Германия"] = "Берлин",
+                ["Великобритания"] = "Лондон"
+            };
+
+            foreach (var pair in countries3)
+                Console.WriteLine("{0} - {1}", pair.Key, pair.Value);
+             */
+
+            #endregion
+
+            #region Stack
+            /* Console.OutputEncoding = Encoding.UTF8;
+
+            // LIFO
+            Stack<int> numbers = new Stack<int>();
+
+            numbers.Push(3); // в стеке 3
+            numbers.Push(5); // в стеке 5, 3
+            numbers.Push(8); // в стеке 8, 5, 3
+
+            // так как вверху стека будет находиться число 8, то оно и извлекается
+            int stackElement = numbers.Pop(); // в стеке 5, 3
+            Console.WriteLine(stackElement);
+
+            Stack<Person> persons = new Stack<Person>();
+            persons.Push(new Person() { Name = "Tom" });
+            persons.Push(new Person() { Name = "Bill" });
+            persons.Push(new Person() { Name = "John" });
+
+            foreach (Person p in persons)
+            {
+                Console.WriteLine(p.Name);
+            }
+
+            // Первый элемент в стеке
+            Person person = persons.Pop(); // теперь в стеке Bill, Tom
+            Console.WriteLine(person.Name);
+
+            Console.ReadLine();*/
+            #endregion
+
+            #region Queue
+            /*
+              Console.OutputEncoding = Encoding.UTF8;
+
+            // FIFO
+            Queue<int> numbers = new Queue<int>();
+
+            numbers.Enqueue(3); // очередь 3
+            numbers.Enqueue(5); // очередь 3, 5
+            numbers.Enqueue(8); // очередь 3, 5, 8
+
+            // получаем первый элемент очереди
+            int queueElement = numbers.Dequeue(); //теперь очередь 5, 8
+            Console.WriteLine(queueElement);
+            Console.ReadKey();
+
+            Queue<Person> persons = new Queue<Person>();
+            persons.Enqueue(new Person() { Name = "Tom" });
+            persons.Enqueue(new Person() { Name = "Bill" });
+            persons.Enqueue(new Person() { Name = "John" });
+
+            // получаем первый элемент без его извлечения
+            Person pp = persons.Peek();
+            Console.WriteLine(pp.Name);
+
+            Console.WriteLine("Сейчас в очереди {0} человек", persons.Count);
+
+            // теперь в очереди Tom, Bill, John
+            foreach (Person p in persons)
+            {
+                Console.WriteLine(p.Name);
+            }
+
+            // Извлекаем первый элемент в очереди - Tom
+            Person person = persons.Dequeue(); // теперь в очереди Bill, John
+            Console.WriteLine(person.Name);
+
+            Console.ReadLine();
+             */
+            #endregion
+
+            #region List
+            /*
+               //void Add(T item): добавление нового элемента в список
+            //
+            //void AddRange(ICollection collection): добавление с список коллекции или массива
+            //
+            //int BinarySearch(T item): бинарный поиск элемента в списке.Если элемент найден, то метод возвращает индекс этого элемента в коллекции. При этом список должен быть отсортирован.
+            //
+            //int IndexOf(T item): возвращает индекс первого вхождения элемента в списке
+            //
+            //void Insert(int index, T item): вставляет элемент item в списке на позицию index
+            //
+            //bool Remove(T item): удаляет элемент item из списка, и если удаление прошло успешно, то возвращает true
+            //
+            //void RemoveAt(int index): удаление элемента по указанному индексу index
+            //
+            //void Sort(): сортировка списка
+                        
+            Console.OutputEncoding = Encoding.UTF8;
+
+            List<int> numbers = new List<int>() { 1, 2, 3, 45 };
+
+            numbers.Add(6); // добавление элемента
+            numbers.AddRange(new int[] { 7, 8, 9 });
+            numbers.Insert(0, 777); // вставляем на первое место в списке число 777
+            numbers.RemoveAt(1); //  удаляем второй элемент
+            numbers.Remove(45);
+            numbers.Sort();
+            foreach (int i in numbers)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine("Index of 7: " + numbers.IndexOf(7));
+
+            Console.ReadKey();
+
+            //numbers.Exists((x) => x % 2 == 0);
+
+            List<Person> people = new List<Person>(3);
+            Person person = new Person() { Name = "Billy" };
+            people.Add(person);
+            people.Add(new Person() { Name = "Antony" });
+            people.Add(new Person() { Name = "Julia" });
+            people.Sort();
+
+            foreach (Person p in people)
+            {
+                Console.WriteLine(p.Name);
+            }
+
+            Console.ReadLine();
+             */
+            #endregion
 
 
+
+
+
+        }
+    }
+    public class Person : IComparable<Person>
+    {
+        public string Name { get; set; }
+
+        public int CompareTo(Person other)
+        {
+            return Name.CompareTo(other.Name);
         }
     }
 }

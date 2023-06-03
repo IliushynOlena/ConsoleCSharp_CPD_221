@@ -41,6 +41,20 @@ namespace _17_Delegates
         {
             Console.WriteLine("Testing....");
         }
+        public delegate void FinishAction();
+        public void HardWork(FinishAction action)
+        {
+            Random rnd = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"Operation {i + 1} working....");
+                Thread.Sleep(rnd.Next(500));
+                Console.WriteLine($"Operation {i + 1} ended....");
+            }
+            //finish action 
+            action?.Invoke();
+            Console.WriteLine();
+        }
     }
     public delegate double CalcDelegate(double x, double y);
     public class Calculator
@@ -63,6 +77,7 @@ namespace _17_Delegates
                 return x / y;
             throw new DivideByZeroException();
         }
+       
 
     }
 
@@ -75,6 +90,7 @@ namespace _17_Delegates
             Console.WriteLine(oper?.Invoke(a,b));
         }
         delegate void FinishAction();
+        //call back function
         static void HardWork(FinishAction action)
         {
             Random rnd = new Random();
@@ -94,6 +110,8 @@ namespace _17_Delegates
         }
         static void Main(string[] args)
         {
+            SuperClass s = new SuperClass();
+           s.HardWork(Action1);
             HardWork(Action1);
             HardWork(delegate () { Console.WriteLine("Good job!!!"); } );
 

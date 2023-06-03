@@ -4,7 +4,8 @@
     class Exchange
     {
         private int course;
-        public event OnCourseChange ListTraders; 
+        public event OnCourseChange ListTraders;
+        public OnCourseChange cource;
 
         public int Course
         {
@@ -68,6 +69,10 @@
     }
     internal class Program
     {
+        static void TestMethod(int num)
+        {
+            Console.WriteLine(num);
+        }
         static void Main(string[] args)
         {
             string str = "hello";
@@ -81,7 +86,10 @@
             Console.WriteLine(str.Equals(str2));
             Console.WriteLine(str2.Equals(str3));
             Console.WriteLine(str3.Equals(str4));
+
             Exchange exchange = new Exchange();
+            exchange.cource = TestMethod;
+            exchange.cource.Invoke(10);
 
             Trayder[] trayders = new Trayder[]
             {
